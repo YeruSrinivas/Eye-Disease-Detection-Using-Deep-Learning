@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Result</title>
+    <style>
+        div a{
+            display: inline-block;
+            width: 80px;
+            text-decoration: none;
+            font-size: 18px;
+            color: rgb(41, 90, 154)
+        }
+    </style>
+</head>
+<body style="margin: 0px;padding: 0px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <div style="background-color: lightblue;">
+        <div
+            style="background-color: lightblue;display: flex;align-items: center;justify-content: space-around;color: rgb(41, 90, 154);height: 80px;">
+            <div>
+                <h1>LIVEDOC</h1>
+            </div>
+            <div>
+                <a href="">About</a>
+                <a style="">Help</a>
+                <a href="">Contact</a>
+                <button style="background-color:lightblue ;border-color: darkblue;border-width: 3px;border-radius: 10px;cursor: pointer;"><a
+                        style="font-size: 18px;display: inline-block;
+                        width: 80px;
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: rgb(41, 90, 154)">Predict</a></button>
+            </div>
+        </div>
+        <h1 style="text-align: center;padding:20px;padding-top: -30px;color: darkblue;font-weight: bolder;">Predicted
+            Output</h1>
+    </div>
+    <p style="text-align: center;color: darkblue;font-size: 30px;font-weight: bold;"><strong>Predicted Disease:</strong> {{ result }}</p>
+    <p style="text-align: center;"><a style="display: inline-block; text-align: center;color: darkblue;font-size: 20px;font-weight: bold;text-decoration: none;" href="/">Upload Another Image</a></p>
+</body>
+</html>

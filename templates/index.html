@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <style>
+        a{
+            display: inline-block;
+            width: 80px;
+            text-decoration: none;
+            font-size: 18px;
+            color: rgb(41, 90, 154)
+        }
+    </style>
+</head>
+
+<body style="margin: 0px;padding: 0px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <div style="background-color: lightblue;">
+        <div
+            style="background-color: lightblue;display: flex;align-items: center;justify-content: space-around;color: rgb(41, 90, 154);height: 80px;">
+            <div>
+                <h1>LIVEDOC</h1>
+            </div>
+            <div>
+                <a href="">About</a>
+                <a style="">Help</a>
+                <a href="">Contact</a>
+                <button style="background-color:lightblue ;border-color: darkblue;border-width: 3px;border-radius: 10px;cursor: pointer;"><a
+                        style="font-size: 18px;display: inline-block;
+                        width: 80px;
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: rgb(41, 90, 154)">Predict</a></button>
+            </div>
+        </div>
+        <h1 style="text-align: center;padding:20px;padding-top: -30px;color: darkblue;font-weight: bolder;">Predict
+            Diesease</h1>
+    </div>
+    <div style="display: flex;align-items: center;justify-content: center;">
+        <div style="margin-left: 70px;">
+            <img style="width: 70%;" src="C:\Users\NEERAJ KUMAR\OneDrive\Desktop\Flask\static\Screenshot 2025-03-06 145556.png" alt="">
+        </div>
+        <div style="margin-right: 100px;">
+            <h2 style="text-align: center;padding:20px;color: darkblue;font-weight: bolder;">Please Upload The Image</h2>
+            <form action="/" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" required>
+                <button style="background-color: darkblue;color: white; padding: 10px 30px;border-radius: 10px;" type="submit">Predict</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
